@@ -1,0 +1,17 @@
+h1{
+    margin-bottom: 10px;
+    text-align: left;
+    color: aliceblue;
+    width: 300px;
+    margin-left: -750px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #0059ff, #000000); /* Degradado de azul claro a azul oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
