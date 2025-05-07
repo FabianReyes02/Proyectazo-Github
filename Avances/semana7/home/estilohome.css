@@ -1,0 +1,35 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #0059ff, #000000); /* Degradado de azul claro a azul oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el texto y la imagen */
+    align-items: flex-start; /* Alinea el texto y la imagen al inicio */
+    width: 80%; /* Ajusta el ancho del contenedor según sea necesario */
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-align: left;
+    color: aliceblue;
+    width: 20%; /* Menor ancho para que el texto sea más vertical */
+    line-height: 1.2; /* Reduce espacio vertical entre líneas */
+}
+
+.image-container {
+    margin-left: 20px; /* Espacio entre el texto y la imagen */
+}
+
+img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */ 
+    border-radius: 100px; 
+}
