@@ -29,7 +29,30 @@ h1 {
 }
 
 img {
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    max-width: 80%; /* Asegura que la imagen no exceda el ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */ 
     border-radius: 100px; 
+    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+}
+button {
+    margin-top: 15px;
+    padding: 12px 28px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 250px;
+    
+  }
+button:hover {
+    background-color: #0056b3;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
