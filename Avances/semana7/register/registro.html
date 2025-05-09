@@ -13,8 +13,11 @@
     <h2>Registrarse</h2>
     <!--Conexion con una base de datos para validar las credenciales-->
     <form id="RegisterForm" onsubmit="return validarRegistro(event)">
+        <input type="text" name="usuario" placeholder="Nombre de usuario" required>
         <input type="text" name="correo" placeholder="Correo electrónico" required>
         <input type="password" name="contraseña" placeholder="Contraseña" required>
+        <input type="password" name="confirmaContraseña" placeholder="Confirmar Contraseña" required>
+
         <input type="submit" value="Entrar">
     </form>
 
