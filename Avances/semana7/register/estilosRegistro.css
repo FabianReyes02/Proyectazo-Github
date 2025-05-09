@@ -9,6 +9,7 @@ body {
 }
 .login-container {
     background: rgb(255, 255, 255);
+    width: 60%;
     padding: 50px;
     border-radius: 70px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -18,7 +19,7 @@ h2 {
     text-align: center;
 }
 input[type="text"], input[type="password"] {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -47,4 +48,18 @@ a {
 }
 a:hover {
     text-decoration: underline;
+}
+input[type="text"], input[type="usuario"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="text"], input[type="correo"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
