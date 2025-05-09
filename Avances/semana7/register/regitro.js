@@ -11,10 +11,10 @@ function validarLogin(event) {
 
     // Validar las credenciales
     if (usuario === usuarioValido && contraseña === contraseñaValida) {
-        alert("Inicio de sesión exitoso!");
+        alert("Se ha registrado de manera exitosa");
         //redireccion al principal
         window.location.href = "principal.html";
     } else {
-        alert("Usuario o contraseña incorrectos. Inténtalo de nuevo.");
+        alert("Complete todos los campos por favor");
     }
 }
