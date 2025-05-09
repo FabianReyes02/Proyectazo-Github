@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <!-- Conexión al archivo CSS -->
+    <link rel="stylesheet" href="estilosRegistro.css">
+</head>
+<body>
+<!--Caja de Registro-->
+<div class="login-container">
+    <h2>Registrarse</h2>
+    <!--Conexion con una base de datos para validar las credenciales-->
+    <form id="RegisterForm" onsubmit="return validarRegistro(event)">
+        <input type="text" name="correo" placeholder="Correo electrónico" required>
+        <input type="password" name="contraseña" placeholder="Contraseña" required>
+        <input type="submit" value="Entrar">
+    </form>
+
+    <p>¿Ya tienes una cuenta? <a href="/Proyectazo-Github/Avances/semana7/proyecto/inicio.html">Inicia Sesión</a></p>
+</div>
+<!--conexion con el script en JS-->
+<script src="registro.js"></script>
+
+</body>
+</html>
