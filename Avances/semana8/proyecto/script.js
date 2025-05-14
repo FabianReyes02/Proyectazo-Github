@@ -12,6 +12,7 @@ function validarLogin(event) {
     // Validar las credenciales
     if (usuario === usuarioValido && contraseña === contraseñaValida) {
         alert("Inicio de sesión exitoso!");
+        window.location.href="basedatos.js";
         //redireccion al principal
         window.location.href = "principal.html";
     } else {
