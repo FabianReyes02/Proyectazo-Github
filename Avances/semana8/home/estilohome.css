@@ -1,0 +1,61 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #0059ff, #000000); /* Degradado de azul claro a azul oscuro */
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+  /* Alinea el texto y la imagen al inicio */
+    width: 100%; /* Ajusta el ancho del contenedor según sea necesario */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: aliceblue;
+     /* Menor ancho para que el texto sea más vertical */
+    line-height: 1.2; /* Reduce espacio vertical entre líneas */
+   
+}
+
+.image-container {
+    margin-left: 50px; /* Espacio entre el texto y la imagen */
+}
+
+img {
+    /* Asegura que la imagen no exceda el ancho del contenedor */
+    width: 80%;
+    height: 19.5cm; /* Mantiene la proporción de la imagen */ 
+    border-radius: 10px; 
+    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+    margin: 0px;
+}
+
+button:hover {
+    text-align: center;
+    background-color: #0056b3;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+    padding: 12px 28px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+.div-btn{
+    padding-top: 30px;
+    text-align: center;
+}
+.contenedor{
+    padding: 20px 50px;
+}
