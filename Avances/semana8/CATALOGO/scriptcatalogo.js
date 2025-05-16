@@ -1,7 +1,7 @@
 // Insertar API KEY de consulta de steam
 const apiKey = '688044FF96DFFC232330A84B1C0FBF34';
 // IDs de juegos para consultar, se puede consultar en steamdb.info
-const appIds = [440, 730, 3240220, 72850, 1888930, 570, 7940, 12110, 1196590, 578080, 1172470, 252490];
+const appIds = [440, 730, 3240220, 72850, 1888930, 570, 7940, 12110, 1196590, 578080, 1172470, 252490,1790600,3241660,381210];
 const gameGrid = document.getElementById('game-grid');
 
 async function fetchGames() {
