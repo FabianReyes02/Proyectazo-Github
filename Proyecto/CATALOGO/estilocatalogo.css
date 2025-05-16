@@ -70,11 +70,10 @@ main {
 }
 
 .game h3 {
-    margin: 10px 0 5px 0;
+    margin: 10px 0;
 }
 
 .game p {
     color: #A0A0A0;
     font-size: 14px;
-    margin: 2px 0;
 }
