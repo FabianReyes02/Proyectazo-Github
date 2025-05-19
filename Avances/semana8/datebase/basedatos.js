@@ -15,7 +15,7 @@ connection.connect((err) => {
     return console.error('Error al conectar a la base de datos:', err.message);
   }
   console.log('Conectado a la base de datos MySQL.');
-
+//
   // Consulta de ejemplo
   connection.query('SELECT NOW() AS currentTime', (err, results) => {
     if (err) {
