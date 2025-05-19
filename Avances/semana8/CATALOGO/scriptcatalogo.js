@@ -32,8 +32,13 @@ async function fetchGames() {
     }
 }
 
+
 function populateGenreFilter(games) {
     const genreSet = new Set();
+
+//
+function displayGames(games) {
+
     games.forEach(function(game) {
         var key = Object.keys(game)[0];
         var gameData = game[key];
