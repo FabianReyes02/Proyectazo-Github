@@ -53,11 +53,11 @@ git clone https://github.com/FabianReyes02/Proyectazo-Github.git
 |Semana 1           |Inicio del proyecto   |[Ver]([Avances/semana1/Proyeto Github](https://github.com/FabianReyes02/Proyectazo-Github/tree/main/Avances/semana1/Proyeto%20Github)
 |Semana 2           |Integración de imagenes y breves descripcion de los juegos|[Ver](https://github.com/FabianReyes02/Proyectazo-Github/tree/main/Avances/semana2/Proyectazo-Github-main)
 |Semana 3           |Avance del home       |[Ver](https://github.com/FabianReyes02/Proyectazo-Github/tree/main/Avances/semana3)
-|Semana 4           |Tabla gantt           |[Ver]()
+|Semana 4           |                      |[Ver]()
 |Semana 5           |Avance de diseño      |[Ver](https://github.com/FabianReyes02/Proyectazo-Github/tree/main/Avances/semana5)
-|Semana 6           |                      |[Ver]()
+|Semana 6           |Tabla gantt           |[Ver]()
 |Semana 7           |Avance de diseño      |[Ver](https://github.com/FabianReyes02/Proyectazo-Github/tree/main/Avances/semana7)
-|Semana 8           |Agración de juegos    |[Ver](https://github.com/FabianReyes02/Proyectazo-Github/tree/main/Avances/semana8)
+|Semana 8           |Se agregan juegos     |[Ver](https://github.com/FabianReyes02/Proyectazo-Github/tree/main/Avances/semana8)
 
 
 
