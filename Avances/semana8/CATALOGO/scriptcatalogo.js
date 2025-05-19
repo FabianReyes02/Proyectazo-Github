@@ -1,8 +1,13 @@
 // Insertar API KEY de consulta de steam
+
+const apiKey = ''; // Asegúrate de agregar tu API Key aquí si es necesario
+// IDs de juegos para consultar, se puede consultar en steamdb.info
+const appIds = [440, 730, 3240220, 72850, 1888930, 570, 7940, 12110, 1196590, 578080, 1172470, 252490, 1790600, 3241660, 381210, 1174180, 108600, 227300, 1665460, 4000, 1091500, 322170, 2878980, 1190970, 2767030, 1086940, 2139460, 1364780, 1551360, 2379780, 304930, 39210];
 const apiKey = '';
 // IDs de juegos para consultar, se puede consultar en steamdb.info
 const appIds = [440, 730, 3240220, 72850, 1888930, 570, 7940, 12110, 1196590, 578080, 1172470, 252490,1790600,3241660,381210,1174180,108600,227300,1665460,4000
 ,1091500,322170,2878980,1190970,2767030,1086940,2139460,1364780,1551360,2379780,304930,39210];
+
 const gameGrid = document.getElementById('game-grid');
 
 async function fetchGames() {
@@ -53,4 +58,23 @@ function displayGames(games) {
         }
     });
 }
-        fetchGames();
+
+fetchGames();
+
+// Funcionalidad del menú hamburguesa
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+function toggleMenu() {
+    menu.classList.toggle('active');
+    const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+    hamburger.setAttribute('aria-expanded', !expanded);
+}
+
+hamburger.addEventListener('click', toggleMenu);
+hamburger.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleMenu();
+    }
+});
