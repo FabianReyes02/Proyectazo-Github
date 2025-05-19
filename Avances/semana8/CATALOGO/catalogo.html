@@ -9,9 +9,16 @@
 <body>
     <header>
         <nav>
-            <h1>Explore</h1>
+            <a href="#" class="logo-link" aria-label="Inicio">
+                <img src="fotos/logo-Photoroom.png" alt="Logo de la aplicación" class="logo-img" />
+            </a>
             <input type="text" placeholder="Buscar..." />
-            <ul>
+            <div class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" role="button" tabindex="0">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="menu" class="menu">
                 <li>Todos</li>
                 <li>Disparos</li>
                 <li>Supervivencia</li>
@@ -31,3 +38,4 @@
     <script src="scriptcatalogo.js"></script>
 </body>
 </html>
+

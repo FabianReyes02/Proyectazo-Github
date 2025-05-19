@@ -17,17 +17,37 @@ nav {
     align-items: center;
 }
 
-nav h1 {
-    margin: 0;
+nav .logo-link {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo-img {
+    height: 100px; /* Tamaño del logo ajustable */
+    width: fit-content;
 }
 
 nav input {
     padding: 10px;
     border: none;
     border-radius: 5px;
+    width: 200px; /* Default width */
 }
 
-nav ul {
+nav .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+nav .hamburger div {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+
+nav .menu {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -45,6 +65,30 @@ nav .user-info img {
     height: 40px;
     border-radius: 50%;
     margin-left: 10px;
+}
+
+/* Estilos para el menú hamburguesa */
+@media (max-width: 768px) {
+    nav .menu {
+        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #2B2B38;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    nav .menu.active {
+        display: flex; /* Mostrar el menú cuando está activo */
+    }
+    nav .hamburger {
+        display: flex; /* Mostrar el botón hamburguesa en pantallas pequeñas */
+    }
+    nav input {
+        width: 120px; /* Más pequeña en móvil */
+    }
 }
 
 main {
@@ -67,6 +111,11 @@ main {
 
 .game img {
     width: 100%;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+.game:hover img{
+    transform: scale(1.1);
 }
 
 .game h3 {
@@ -78,3 +127,4 @@ main {
     font-size: 14px;
     margin: 2px 0;
 }
+
