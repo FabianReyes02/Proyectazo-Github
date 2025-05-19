@@ -52,7 +52,7 @@ function displayGames(games) {
             }
         }
     });
-
+}
     genreSet.forEach(function(genre) {
         const option = document.createElement("option");
         option.value = genre;
