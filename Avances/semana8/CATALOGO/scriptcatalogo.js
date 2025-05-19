@@ -29,7 +29,7 @@ async function fetchGames() {
         gameGrid.innerHTML = '<p>Error al cargar los juegos. Por favor, intenta de nuevo más tarde.</p>';
     }
 }
-
+//
 function displayGames(games) {
     games.forEach(function(game) {
         var key = Object.keys(game)[0];
