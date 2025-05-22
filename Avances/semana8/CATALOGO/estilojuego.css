@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #171a21;
+    color: #c7d5e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: #1b2838;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.game-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #000;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.description {
+    margin: 20px 0;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    color: #e6e6e6;
+}
+
+.info-item {
+    margin: 12px 0;
+    font-size: 0.95rem;
+}
+
+.genres {
+    color: #a0d2ff;
+}
+
+.price {
+    color: #a4d007;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.rating {
+    background-color: #66c0f4;
+    color: #000;
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 8px 15px;
+    background-color: #2a475e;
+    color: #66c0f4;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+}
+
+.back-link:hover {
+    background-color: #1a3a52;
+    color: #ffffff;
+}
+
+/* Estilos mejorados para el slider */
+.screenshot-container {
+    margin-top: 25px;
+    position: relative;
+    width: 100%;
+}
+
+.screenshot-title {
+    font-weight: bold;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.screenshot-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.screenshot-slider::-webkit-scrollbar {
+    height: 6px;
+}
+
+.screenshot-slider::-webkit-scrollbar-track {
+    background: #2a3f5a;
+    border-radius: 3px;
+}
+
+.screenshot-slider::-webkit-scrollbar-thumb {
+    background: #66c0f4;
+    border-radius: 3px;
+}
+
+.screenshot-slider img {
+    height: 150px;
+    width: auto;
+    min-width: 200px;
+    border-radius: 6px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    cursor: pointer;
+    object-fit: cover;
+    background-color: #000;
+    transition: transform 0.2s ease;
+}
+
+.screenshot-slider img:hover {
+    transform: scale(1.03);
+}
+
+.screenshot-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.screenshot-nav button {
+    background: rgba(102, 192, 244, 0.2);
+    border: none;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.screenshot-nav button:hover {
+    background: rgba(102, 192, 244, 0.8);
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        padding: 15px;
+        gap: 20px;
+    }
+    
+    .left, .right {
+        min-width: 100%; /* Asegura que ocupen todo el ancho */
+    }
+    
+    .game-image {
+        max-height: 250px; /* Ajusta la altura máxima de la imagen */
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    }
+    
+    h1 {
+        font-size: 1.6rem; /* Tamaño de fuente más pequeño */
+    }
+    
+    .description, .info-item {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    }
+    
+    .screenshot-slider img {
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        width: 100%; /* Asegura que las imágenes ocupen todo el ancho */
+        min-width: 100%; /* Asegura que las imágenes no sean más pequeñas que el contenedor */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        border-radius: 8px;
+    }
+    
+    .game-image {
+        max-height: 200px; /* Ajusta la altura máxima de la imagen */
+    }
+    
+    .screenshot-slider img {
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        width: 100%; /* Asegura que las imágenes ocupen todo el ancho */
+        min-width: 100%; /* Asegura que las imágenes no sean más pequeñas que el contenedor */
+    }
+    
+    .screenshot-nav button {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+    
+    h1 {
+        font-size: 1.4rem; /* Tamaño de fuente más pequeño */
+    }
+    
+    .description, .info-item {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    }
+}
