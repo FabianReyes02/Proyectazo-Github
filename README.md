@@ -64,7 +64,4 @@ git clone https://github.com/FabianReyes02/Proyectazo-Github.git
 
 --- Actualmente el proyecto sigue en desarrollo, aún falta mejorar el diseño y conexión de usuarios con base de datos que en un futuro se va a implementar.
 
-# Retroalimentación del equipo
-
----Mejorar trabajo en equipo, ya que no todos realizan trabajos de forma equitativa.
 
