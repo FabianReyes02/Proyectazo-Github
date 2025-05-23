@@ -57,7 +57,7 @@ if (appId) {
                         <p class="info-item"><strong>Desarrollador:</strong> ${developer}</p>
                         <p class="info-item"><strong>Lanzamiento:</strong> ${releaseDate}</p>
                         <p class="info-item"><strong>Requisitos mínimos:</strong><br><span style="white-space: pre-line;">${requirements}</span></p>
-                        <a class="back-link" href="index.html">← Volver al catálogo</a>
+                        <a class="back-link" href="catalogo.html">← Volver al catálogo</a>
                     </div>
                 `;
 
