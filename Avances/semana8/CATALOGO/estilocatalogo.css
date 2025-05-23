@@ -156,7 +156,9 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
+    
 }
+
 
 .game {
     background-color: #2B2B38;
