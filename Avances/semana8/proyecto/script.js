@@ -6,15 +6,15 @@ function validarLogin(event) {
     const contraseña = document.getElementById('contraseña').value;
 
     // Usuario y contraseña predefinidos
-    const usuarioValido = "1234";
+    const usuarioValido = "Proyectazo";
     const contraseñaValida = "1234";
 
     // Validar las credenciales
     if (usuario === usuarioValido && contraseña === contraseñaValida) {
         alert("Inicio de sesión exitoso!");
-        window.location.href="basedatos.js";
-        //redireccion al principal
-        window.location.href = "principal.html";
+       
+        // Redirección al principal
+        window.location.href = "/Proyectazo-Github/Avances/semana8/CATALOGO/catalogo.html";
     } else {
         alert("Usuario o contraseña incorrectos. Inténtalo de nuevo.");
     }

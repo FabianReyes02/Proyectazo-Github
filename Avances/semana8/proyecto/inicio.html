@@ -8,21 +8,19 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-<!--Caja de inicio de sesion-->
+<!-- Caja de inicio de sesión -->
 <div class="login-container">
     <h2>Iniciar Sesión</h2>
-    <!--Conexion con una base de datos para validar las credenciales-->
+    <!-- Conexión con una base de datos para validar las credenciales -->
     <form id="LoginForm" onsubmit="return validarLogin(event)">
-        <input type="text" name="usuario" placeholder="Correo electrónico o usuario" required>
-        <input type="password" name="contraseña" placeholder="Contraseña" required>
+        <input type="text" id="usuario" name="usuario" placeholder="Correo electrónico o usuario" required>
+        <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required>
         <input type="submit" value="Entrar">
     </form>
     <p><a href="ruta recuperacion cuenta">Olvidé la contraseña</a></p>
-
     <p>¿No tienes una cuenta? <a href="/Proyectazo-Github/Avances/semana8/register/registro.html">Créala ahora</a></p>
 </div>
-<!--conexion con el script en JS-->
+<!-- Conexión con el script en JS -->
 <script src="script.js"></script>
-
 </body>
 </html>
