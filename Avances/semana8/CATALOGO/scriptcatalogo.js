@@ -1,4 +1,7 @@
 const apiKey = ''; // Asegúrate de agregar tu API Key aquí si es necesario
+
+const appIds = [440, 730, 3240220, 72850, 1888930, 570, 7940,12110, 1196590, 578080, 1172470, 252490, 1790600, 3241660,381210, 1174180, 108600, 227300, 1665460, 4000, 1091500,322170, 2878980, 1190970, 2767030, 1086940, 2139460, 1364780,1551360, 2379780, 304930, 39210];
+
 const appIds = [440, 730, 3240220, 72850, 1888930, 570, 7940,
      12110, 1196590, 578080, 1172470, 252490, 1790600, 3241660,
       381210, 1174180, 108600, 227300, 1665460, 4000, 1091500, 
@@ -111,11 +114,15 @@ function displayGames(games, genreFilterValue = "all", searchText = "") {
 
         var price = data.price_overview ? data.price_overview.final_formatted : (data.is_free ? 'Gratis' : 'No disponible');
 
-        gameElement.innerHTML =
-            `<img src="${data.header_image}" alt="${data.name}" />` +
-            `<h3>${data.name}</h3>` +
-            `<p>${genres}</p>` +
-            `<p>Precio: ${price}</p>`;
+        gameElement.innerHTML = `
+    <a href="juego.html?appId=${data.steam_appid}" class="game-link">
+        <img src="${data.header_image}" alt="${data.name}" />
+        <h3>${data.name}</h3>
+        <p>${genres}</p>
+        <p>Precio: ${price}</p>
+    </a>
+`;
+
 
         gameGrid.appendChild(gameElement);
     });
@@ -149,4 +156,3 @@ hamburger.addEventListener('keypress', function(e) {
         toggleMenu();
     }
 });
-
