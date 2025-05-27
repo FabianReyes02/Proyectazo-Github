@@ -1,10 +1,9 @@
 # Proyectazo-Github
 Proyecto semestral de la asignatura de Github
 
-Nuestro proyecto se trata de una pagina web sobre catalogos de videojuegos, utilizando html y css.
+Nuestro proyecto se trata de una pagina web sobre catalogos de videojuegos, utilizando html, javascript y css.
 ![EstimInfos](https://github.com/user-attachments/assets/781dcef4-00bf-4c74-bafd-a4353281f476)
 
-Las primeras semanas intentamos crear una pagina real con html y un poco de css, por lo tanto quedo algo muy basico debido a no tener los conocimientos adecuados ..
 ---
 
 ## Tabla de contenido
@@ -30,7 +29,7 @@ Las primeras semanas intentamos crear una pagina real con html y un poco de css,
 
 ## Tecnologías 
 -Html
--Java scrip
+-Java script
 -Css
 -Git 
 -Github
@@ -43,7 +42,9 @@ Las primeras semanas intentamos crear una pagina real con html y un poco de css,
 ```bash
 git clone https://github.com/FabianReyes02/Proyectazo-Github.git
 ```
-
+2.-Ejecutar el archivo proyecto.html
+---
+3.-Instalar la extensión Allow Cords para correcto funcionamiento
 ---
 
 ## Avances semanales
