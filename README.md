@@ -42,9 +42,15 @@ Nuestro proyecto se trata de una pagina web sobre catalogos de videojuegos, util
 ```bash
 git clone https://github.com/FabianReyes02/Proyectazo-Github.git
 ```
-2.-Ejecutar el archivo proyecto.html
+2.-
+```bash
+Ejecutar el archivo proyecto.html
+```
 ---
-3.-Instalar la extensión Allow Cords para correcto funcionamiento
+3.-
+```bash
+Instalar la extensión Allow Cords para correcto funcionamiento
+```
 ---
 
 ## Avances semanales
