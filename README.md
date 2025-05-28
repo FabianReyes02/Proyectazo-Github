@@ -25,16 +25,14 @@ Nuestro proyecto se trata de una pagina web sobre catalogos de videojuegos, util
 |Fabían Reyes                       |Lider del proyecto|
 |Thomas Alvarez                     |Desarrollador Backend|
 
----
+--- 
 
-## Tecnologías 
--Html
--Java script
--Css
--Git 
--Github
-
----
+## Tecnologías
+- Html <img src="https://github.com/user-attachments/assets/c2c1fe59-1ec4-4858-826c-df552c203aac" width="30" />
+- JavaScript <img src="https://github.com/user-attachments/assets/49d62683-7df1-4e03-a524-fc0c4031a169" width="30" />
+- Css <img src="https://github.com/user-attachments/assets/512c2801-1e0a-442e-8182-48c682113929" width="30" />
+- Git <img src="https://github.com/user-attachments/assets/91e9a0ac-9178-4021-9099-7244e6504f27" width="30" />
+- Github <img src="https://github.com/user-attachments/assets/b4082a0f-115b-47df-8113-ce780ebf1f7a" width="30" />
 
 ## Instalación
 
