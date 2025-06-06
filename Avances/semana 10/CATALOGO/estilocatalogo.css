@@ -1,0 +1,192 @@
+body {
+    background-color: #1E1E2E;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    background-color: #2B2B38;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav .logo-link {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo-img {
+    height: 60px;
+    width: fit-content;
+}
+
+nav input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    background-color: #444;
+    color: white;
+}
+
+nav .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+nav .hamburger div {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+/* User info para desktop */
+.user-info-desktop {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-info-desktop img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Menú principal */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+/* User info para móvil (dentro del menú) */
+.user-info-mobile {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    border-top: 1px solid #444;
+    margin-top: 10px;
+}
+
+.user-info-mobile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Estilo del filtro */
+#genre-filter {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    min-width: 140px;
+}
+
+/* Estilos para móvil */
+@media (max-width: 768px) {
+    nav .hamburger {
+        display: flex;
+    }
+    
+    nav .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 20px;
+        background-color: #2B2B38;
+        width: 250px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        gap: 15px;
+        z-index: 100;
+    }
+    
+    nav .menu.active {
+        display: flex;
+    }
+    
+    .user-info-desktop {
+        display: none;
+    }
+    
+    .user-info-mobile {
+        display: flex;
+    }
+    
+    nav input {
+        width: 150px;
+    }
+    
+    #genre-filter {
+        width: 100%;
+    }
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 20px;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    
+}
+
+
+.game {
+    background-color: #2B2B38;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.game:hover {
+    transform: translateY(-5px);
+}
+
+.game img {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.game h3 {
+    margin: 10px 0 5px 0;
+    font-size: 1rem;
+}
+
+.game p {
+    color: #A0A0A0;
+    font-size: 0.8rem;
+    margin: 5px 0;
+}
