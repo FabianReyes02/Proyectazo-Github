@@ -183,10 +183,41 @@ main {
 .game h3 {
     margin: 10px 0 5px 0;
     font-size: 1rem;
+    color: white;
 }
 
 .game p {
     color: #A0A0A0;
     font-size: 0.8rem;
     margin: 5px 0;
+}
+/* Estilos para el contenedor de paginación */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilos para los botones de paginación */
+.pagination-button {
+    background-color: #2B2B38; /* Color de fondo */
+    color: #FFFFFF; /* Color del texto */
+    border: 1px solid #444; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    margin: 0 5px; /* Espaciado entre botones */
+    cursor: pointer; /* Cambiar cursor al pasar el ratón */
+    transition: background-color 0.3s, border-color 0.3s; /* Transición suave */
+}
+
+/* Efecto al pasar el ratón */
+.pagination-button:hover {
+    background-color: #444; /* Color de fondo al pasar el ratón */
+    border-color: #666; /* Color del borde al pasar el ratón */
+}
+
+/* Estilo para el botón activo */
+.pagination-button.active {
+    background-color: #007bff; /* Color de fondo para el botón activo */
+    border-color: #0056b3; /* Color del borde para el botón activo */
 }

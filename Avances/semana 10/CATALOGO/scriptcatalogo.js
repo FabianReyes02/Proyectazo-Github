@@ -21,7 +21,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const gameGrid = document.getElementById('game-grid');
     const genreFilter = document.getElementById("genre-filter");
     const searchInput = document.getElementById("search-input");
+    const paginationContainer = document.getElementById('pagination');
     let allGames = []; // Para almacenar todos los juegos
+    const gamesPerPage = 24; // Número de juegos por página
+    let currentPage = 1;
 
     async function fetchGames() {
         try {
@@ -92,12 +95,18 @@ document.addEventListener("DOMContentLoaded", function() {
             return genreMatch && nameMatch;
         });
 
-        if (filteredGames.length === 0) {
+        // Paginación
+        const totalPages = Math.ceil(filteredGames.length / gamesPerPage);
+        const startIndex = (currentPage - 1) * gamesPerPage;
+        const endIndex = startIndex + gamesPerPage;
+        const paginatedGames = filteredGames.slice(startIndex, endIndex);
+
+        if (paginatedGames.length === 0) {
             gameGrid.innerHTML = "<p>No se encontraron juegos que coincidan con los filtros.</p>";
             return;
         }
 
-        filteredGames.forEach(game => {
+        paginatedGames.forEach(game => {
             var key = Object.keys(game)[0];
             var gameData = game[key];
             var data = gameData.data;
@@ -106,13 +115,12 @@ document.addEventListener("DOMContentLoaded", function() {
             gameElement.classList.add('game');
 
             var genres = data.genres ? data.genres.map(genre => genre.description).join(', ') : 'Sin géneros';
-
             var price = data.price_overview ? data.price_overview.final_formatted : (data.is_free ? 'Gratis' : 'No disponible');
 
             gameElement.innerHTML = `
                 <a href="juego.html?appId=${data.steam_appid}" class="game-link">
                     <img src="${data.header_image}" alt="${data.name}" />
-                    <h3>${data.name}</h3>
+                    <h3 style="color: white;">${data.name}</h3> <!-- Cambiar color a blanco -->
                     <p>${genres}</p>
                     <p>Precio: ${price}</p>
                 </a>
@@ -120,11 +128,30 @@ document.addEventListener("DOMContentLoaded", function() {
 
             gameGrid.appendChild(gameElement);
         });
+
+        // Mostrar botones de paginación
+        showPagination(totalPages);
+    }
+
+    function showPagination(totalPages) {
+        paginationContainer.innerHTML = '';
+
+        for (let i = 1; i <= totalPages; i++) {
+            const button = document.createElement('button');
+            button.textContent = i;
+            button.classList.add('pagination-button');
+            button.onclick = () => {
+                currentPage = i;
+                displayGames(allGames, genreFilter.value, searchInput.value);
+            };
+            paginationContainer.appendChild(button);
+        }
     }
 
     function updateDisplay() {
         const selectedGenre = genreFilter.value;
         const searchText = searchInput.value;
+        currentPage = 1; // Reiniciar a la primera página al actualizar
         displayGames(allGames, selectedGenre, searchText);
     }
 

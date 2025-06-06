@@ -10,9 +10,10 @@ if (appId) {
             if (gameData.success) {
                 const info = gameData.data;
 
-                const price = info.price_overview
-                    ? info.price_overview.final_formatted
-                    : (info.is_free ? 'Gratis' : 'No disponible');
+           const price = info.price_overview
+       ? `<span class="price">${info.price_overview.final_formatted}</span>`
+       : (info.is_free ? '<span class="price">Gratis</span>' : '<span class="price">No disponible</span>');
+   
 
                 const genres = info.genres ? info.genres.map(g => g.description).join(", ") : "Sin género";
                 const metacritic = info.metacritic ? info.metacritic.score : null;
@@ -44,22 +45,23 @@ if (appId) {
                 }
 
                 container.innerHTML = `
-                    <div class="left">
-                        <img class="game-image" src="${info.header_image}" alt="${info.name}" />
-                        ${screenshotsHtml}
-                    </div>
-                    <div class="right">
-                        <h1>${info.name}</h1>
-                        <p class="description">${info.short_description}</p>
-                        <p class="info-item"><strong>Géneros:</strong> <span class="genres">${genres}</span></p>
-                        <p class="info-item"><strong>Precio:</strong> <span class="price">${price}</span></p>
-                        ${metacritic ? `<p class="info-item"><strong>Metacritic:</strong> <span class="rating">${metacritic}</span></p>` : ""}
-                        <p class="info-item"><strong>Desarrollador:</strong> ${developer}</p>
-                        <p class="info-item"><strong>Lanzamiento:</strong> ${releaseDate}</p>
-                        <p class="info-item"><strong>Requisitos mínimos:</strong><br><span style="white-space: pre-line;">${requirements}</span></p>
-                        <a class="back-link" href="catalogo.html">← Volver al catálogo</a>
-                    </div>
-                `;
+  <div class="left">
+    <img class="game-image" src="${info.header_image}" alt="${info.name}" />
+    ${screenshotsHtml}
+  </div>
+  <div class="right">
+    <h1>${info.name}</h1>
+    <p class="description">${info.short_description}</p>
+    <p class="info-item"><i class="fas fa-money-bill-wave"></i> ${price}</p>
+    ${metacritic ? `<p class="info-item"><i class="fas fa-star"></i> ${metacritic}</p>` : ""}
+    <p class="info-item"><i class="fas fa-tags"></i> ${genres}</p>
+    <p class="info-item"><i class="fas fa-code"></i> ${developer}</p>
+    <p class="info-item"><i class="fas fa-calendar-alt"></i> ${releaseDate}</p>
+    <p class="info-item"><i class="fas fa-laptop-code"></i><br><span style="white-space: pre-line;">${requirements}</span></p>
+    <a class="back-link" href="catalogo.html"><i class="fas fa-arrow-left"></i> Volver al catálogo</a>
+  </div>
+`;
+
 
                 // Añadir funcionalidad al slider
                 if (screenshots.length > 0) {

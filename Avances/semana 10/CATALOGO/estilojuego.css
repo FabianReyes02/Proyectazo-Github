@@ -53,20 +53,25 @@ h1 {
     margin: 20px 0;
     line-height: 1.6;
     font-size: 0.95rem;
-    color: #e6e6e6;
+    color: #ffffff;
 }
 
 .info-item {
-    margin: 12px 0;
-    font-size: 0.95rem;
+    margin: 10px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
+
 .genres {
-    color: #a0d2ff;
+    color: #56c7ff;
 }
 
 .price {
-    color: #a4d007;
+    color: #acd550;
     font-weight: bold;
     font-size: 1.1rem;
 }
