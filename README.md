@@ -63,7 +63,8 @@ Instalar la extensión Allow Cords para correcto funcionamiento
 |Semana 6           |Tabla gantt           |[Ver](https://github.com/FabianReyes02/Proyectazo-Github/tree/main/Avances/semana%206)
 |Semana 7           |Avance de diseño      |[Ver](https://github.com/FabianReyes02/Proyectazo-Github/tree/main/Avances/semana7)
 |Semana 8           |Se agregan juegos     |[Ver](https://github.com/FabianReyes02/Proyectazo-Github/tree/main/Avances/semana8)
-
+|Semana 9           |Evaluación            |[Ver]()
+|Semana 10          |Cambio Frontend       |[Ver]()
 
 ## Novedades
 
