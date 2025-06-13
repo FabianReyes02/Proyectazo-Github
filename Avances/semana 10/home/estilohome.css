@@ -1,79 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  * {
-    box-sizing: border-box;
-  }
-  body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #0059ff, #000000);
-    color: #fff;
-  }
-  .container {
-    display: flex;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    gap: 3rem;
-  }
-  .left {
-    flex: 1;
-    max-width: 600px;
-  }
-  .left h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-    text-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  }
-  .left p {
-    font-size: 1.25rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
-  }
-  .btn {
-    background-color: #0004ff;
-    border: none;
-    border-radius: 35px;
-    padding: 0.75rem 2.5rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
-    box-shadow: 0 1px 10px rgba(255, 255, 255, 0.74);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  .btn:hover {
-    background-color: #00eeff;
-    box-shadow: 0 1px 20px rgb(255, 255, 255);
-  }
-  .right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  .right img {
-    max-width: 80%;
-    height: auto;
-    filter: brightness(0.7) blur(4px);
-    border-radius: 20px;
-    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
-    user-select: none;
-  }
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      text-align: center;
-    }
-    .left, .right {
-      max-width: 100%;
-    }
-    .right img {
-      max-width: 60%;
-      margin-top: 2rem;
-      filter: brightness(0.7) blur(2px);
-    }
-  }
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.inicio {
+  height: 100vh;
+  background: url('/Proyectazo-Github/Avances/semana8/CATALOGO/fotos/ChatGPT\ Image\ Jun\ 13\,\ 2025\,\ 10_25_40\ AM.png') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.inicio::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.80); 
+  backdrop-filter: blur(2px);
+}
+
+.inicio-contenido {
+  position: relative;
+  color: white;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.inicio-contenido h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.inicio-contenido p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.inicio-boton {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn.primary {
+  background-color: #0033ff;
+  color: white;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}

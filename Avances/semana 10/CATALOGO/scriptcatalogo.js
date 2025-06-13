@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const paginationContainer = document.getElementById('pagination');
     let allGames = []; // Para almacenar todos los juegos
     const gamesPerPage = 24; // Número de juegos por página
-    let currentPage = 1;
+    let currentPage = 1
+
 
     async function fetchGames() {
         try {
@@ -177,4 +178,13 @@ document.addEventListener("DOMContentLoaded", function() {
             toggleMenu();
         }
     });
+});
+//funcion para que la imagen del la pagina redireccione devuelta a la pagina principal
+  const logoLink= document.querySelector('.logo-link');
+    function redirectToUrl() {
+        window.location.href = '/Proyectazo-Github/Avances/semana 10/home/home.html';
+    }
+logoLink.addEventListener('click', function(event) {
+    event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+    redirectToUrl();
 });
