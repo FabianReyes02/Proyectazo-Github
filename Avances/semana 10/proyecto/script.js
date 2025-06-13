@@ -14,7 +14,7 @@ function validarLogin(event) {
         alert("Inicio de sesión exitoso!");
        
         // Redirección al principal
-        window.location.href = "/Proyectazo-Github/Avances/semana8/CATALOGO/catalogo.html";
+        window.location.href = "/Proyectazo-Github/Avances/semana 10/CATALOGO/catalogo.html";
     } else {
         alert("Usuario o contraseña incorrectos. Inténtalo de nuevo.");
     }
