@@ -1,20 +1,38 @@
-function validarLogin(event) {
-    event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+function validarRegistro(event) {
+    event.preventDefault(); // Previene el envío por defecto del formulario
 
-    // Obtener los valores de usuario y contraseña
-    const usuario = document.getElementById('usuario').value;
-    const contraseña = document.getElementById('contraseña').value;
+    const form = document.getElementById('RegisterForm');
+    const datos = new FormData(form);
 
-    // Usuario y contraseña predefinidos
-    const usuarioValido = "1234";
-    const contraseñaValida = "1234";
+    const contraseña = datos.get('contraseñaRegistro');
+    const confirmar = datos.get('confirmaContraseñaRegistro');
 
-    // Validar las credenciales
-    if (usuario === usuarioValido && contraseña === contraseñaValida) {
-        alert("Se ha registrado de manera exitosa");
-        //redireccion al principal
-        window.location.href = "principal.html";
-    } else {
-        alert("Complete todos los campos por favor");
+    if (contraseña !== confirmar) {
+        alert("Las contraseñas no coinciden.");
+        return false;
     }
+
+    fetch('registro.php', {
+        method: 'POST',
+        body: datos
+    })
+    .then(response => response.text())
+    .then(data => {
+        alert(data);
+        if (data.includes("exitoso")) {
+            window.location.href = "http://localhost/Proyectazo-Github/Avances/semana 10/proyecto/inicio.html";
+;
+        }
+    })
+    .catch(error => {
+        console.error("Error al registrar:", error);
+        alert("Hubo un error al registrar.");
+    });
+
+    return false;
+}
+if (data.includes("exitoso")) {
+    alert("Registro exitoso. Redirigiendo...");
+    window.location.href = "http://localhost/Proyectazo-Github/Avances/semana 10/proyecto/inicio.html";
+
 }
