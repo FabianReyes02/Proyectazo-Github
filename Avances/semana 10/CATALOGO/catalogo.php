@@ -41,13 +41,13 @@ if (!isset($_SESSION['nombre_usuario'])) {
             </li>
             <li class="user-info-mobile">
                 <span><?php echo htmlspecialchars($_SESSION['nombre_usuario']); ?></span>
-                <img src="img/furro.jpg" alt="Perfil" />
+                <img src="img/default.png" alt="Perfil" />
             </li>
         </ul>
-
+    
         <div class="user-info-desktop">
             <span><?php echo htmlspecialchars($_SESSION['nombre_usuario']); ?></span>
-            <img src="img/furro.jpg" alt="Perfil" />
+            <img src="img/default.png" alt="Perfil" />
         </div>
     </nav>
 </header>
