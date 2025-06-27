@@ -58,8 +58,9 @@ if (appId) {
     <p class="info-item"><i class="fas fa-code"></i> ${developer}</p>
     <p class="info-item"><i class="fas fa-calendar-alt"></i> ${releaseDate}</p>
     <p class="info-item"><i class="fas fa-laptop-code"></i><br><span style="white-space: pre-line;">${requirements}</span></p>
-    <a class="back-link" href="catalogo.html"><i class="fas fa-arrow-left"></i> Volver al catálogo</a>
+    <a class="back-link" href="catalogo.php"><i class="fas fa-arrow-left"></i> Volver al catálogo</a>
   </div>
+                
 `;
 
 

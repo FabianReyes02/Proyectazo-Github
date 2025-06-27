@@ -4,3 +4,4 @@ document.getElementById('iniciosesion').addEventListener('click', () => {
 document.getElementById('crearcuenta').addEventListener('click', () => {
     window.location.href = '/Proyectazo-Github/Avances/semana 10/register/registro.html';
     });
+    
