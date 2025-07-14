@@ -91,6 +91,9 @@ Instalar la extensión Allow Cords para correcto funcionamiento
 |Semana 9           |Evaluación            |[Ver]()
 |Semana 10          |Cambio Frontend       |[Ver]()
 
+
+Asana https://app.asana.com/1/1199948236653219/project/1210794997339675/board/1210795183249647
+
 ## 🪪 Licencia
 Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
 
