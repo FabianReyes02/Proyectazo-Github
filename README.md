@@ -90,6 +90,10 @@ Instalar la extensión Allow Cords para correcto funcionamiento
 |Semana 8           |Se agregan juegos     |[Ver](https://github.com/FabianReyes02/Proyectazo-Github/tree/main/Avances/semana8)
 |Semana 9           |Evaluación            |[Ver]()
 |Semana 10          |Cambio Frontend       |[Ver]()
+|Semana 11          |Mejoras frontend      |[Ver]()
+|Semana 12          |Base de datos         |[Ver]()
+|Semana 13          |Microsoft Learn       |[Ver]()
+|Semana 14          |Examen final          |[Ver]()
 
 
 Asana https://app.asana.com/1/1199948236653219/project/1210794997339675/board/1210795183249647
